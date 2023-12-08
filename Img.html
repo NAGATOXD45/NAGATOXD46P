@@ -145,34 +145,35 @@
 
     </div>
 
-    <div id="myModal" class="modal">
-        <div class="modal-content">
+   <div id="myModal" class="modal" onclick="closeModal()">
+        <div class="modal-content" onclick="event.stopPropagation();">
             <span class="close-modal" onclick="closeModal()">&times;</span>
             <img id="modal-img" class="modal-img" src="" alt="Imagen modal">
             <div id="caption" class="modal-caption"></div>
         </div>
     </div>
 
-    <script>
+     <script>
         function openModal(imageSrc, captionText) {
-  var modalImg = document.getElementById('modal-img');
-  var modalCaption = document.getElementById('caption');
+            var modalImg = document.getElementById('modal-img');
+            var modalCaption = document.getElementById('caption');
 
-  modalImg.src = imageSrc;
-  modalCaption.innerHTML = captionText;
+            modalImg.src = imageSrc;
+            modalCaption.innerHTML = captionText;
 
-  document.getElementById('myModal').style.display = 'flex';
+            document.getElementById('myModal').style.display = 'flex';
 
-  // Ajustar la posición y tamaño de la descripción
-  var modalHeight = window.innerHeight * 0.8; // 80% del alto de la ventana
-  modalCaption.style.maxHeight = modalHeight + 'px';
-  modalCaption.style.top = (modalHeight - modalCaption.offsetHeight) / 2 + 'px';
-}
+            // Ajustar la posición y tamaño de la descripción
+            var modalHeight = window.innerHeight * 0.8; // 80% del alto de la ventana
+            modalCaption.style.maxHeight = modalHeight + 'px';
+            modalCaption.style.top = (modalHeight - modalCaption.offsetHeight) / 2 + 'px';
+        }
 
 
         function closeModal() {
             document.getElementById('myModal').style.display = 'none';
         }
+
 
     </script>
 
