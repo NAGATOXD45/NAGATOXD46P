@@ -17,30 +17,54 @@ body{
     font-weight: 900;
 }
 .greetings > span{
-    animation: glow 2.5s ease-in-out infinite;
+    animation: glow 3.5s ease-in-out infinite;
 }
 @keyframes glow{
     0%, 100%{
         color: #fff;
-        text-shadow: 0 0 12px #fbff00, 0 0 50px #fbff00, 0 0 100px #fbff00;
+        text-shadow: 0 0 12px #b90bd4, 0 0 50px #b90bd4, 0 0 100px #b90bd4;
     }
     10%, 90%{
         color: #696565;
         text-shadow: none;
     }
 }
-.greetings > span:nth-child(2){
-    animation-delay: .2s ;
+.greetings > span:nth-child(2) {
+    animation-delay: 0.2s;
 }
-.greetings > span:nth-child(3){
-    animation-delay: .4s ;
+
+.greetings > span:nth-child(3) {
+    animation-delay: 0.4s;
 }
-.greetings > span:nth-child(4){
-    animation-delay: .6s;
+
+.greetings > span:nth-child(4) {
+    animation-delay: 0.6s;
 }
-.greetings > span:nth-child(5){
-    animation-delay: .8s;
+
+.greetings > span:nth-child(5) {
+    animation-delay: 0.8s;
 }
+
+.greetings > span:nth-child(6) {
+    animation-delay: 1s;
+}
+
+.greetings > span:nth-child(7) {
+    animation-delay: 1.2s;
+}
+
+.greetings > span:nth-child(8) {
+    animation-delay: 1.4s;
+}
+
+.greetings > span:nth-child(9) {
+    animation-delay: 1.6s;
+}
+
+.greetings > span:nth-child(10) {
+    animation-delay: 1.8s;
+}
+
 
 .description{
     font-size: 1.5rem;
@@ -70,12 +94,12 @@ body{
 }
 
 .description{
-    color: #fbff00;
+    color: #00c8ff;
 }
 
 /* Estilo para el botón */
 .button button {
-    background-color: yellow; /* Fondo amarillo */
+    background-color: rgb(183, 255, 0)55, 255, 0, 0.773); /* Fondo amarillo */
     border: none; /* Sin bordes */
     padding: 10px 20px; /* Ajusta el relleno según tu preferencia */
     font-size: 18px; /* Tamaño de fuente */
@@ -93,7 +117,7 @@ body{
   
   /* Efecto de resplandor al pasar el cursor sobre el botón */
   .button button:hover {
-    background-color: orange; /* Cambia el color de fondo al pasar el mouse a naranja */
+    background-color: rgb(0, 183, 255); /* Cambia el color de fondo al pasar el mouse a naranja */
     box-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow; /* Efecto de resplandor amarillo */
   }
   
