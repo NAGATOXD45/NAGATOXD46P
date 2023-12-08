@@ -259,6 +259,7 @@ body {
 .flower__line__leaf--1 {
   transform: rotate(70deg) rotateY(30deg);
 }
+
 .flower__line__leaf--2 {
   top: 45%;
   transform: rotate(70deg) rotateY(30deg);
